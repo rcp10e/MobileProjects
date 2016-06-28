@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical" 
+	android:layout_height="fill_parent" 
+	android:layout_width="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="#3B5998"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/gamename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Game Name: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+  <EditText
+        android:id="@+id/gamenametext"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10" >
+
+       
+    </EditText>
+
+    <ListView
+        android:id="@+id/itemlist"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemheader"
+        android:layout_marginTop="12dp"
+         />
+
+    <TextView
+        android:id="@+id/itemheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gamenametext"
+        android:layout_marginTop="20dp"
+        android:text="Item List"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/additem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemlist"
+        android:layout_marginTop="63dp"
+        android:onClick="addItem"
+        android:text="Add Item"
+        android:textColor="#3B5998" />
+
+    <Button
+        android:id="@+id/creategame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/additem"
+        android:layout_marginTop="15dp"
+        android:text="Create Game"
+        android:textColor="#3B5998" />
+   
+</RelativeLayout>
+
+</ScrollView>
